@@ -1,0 +1,37 @@
+.app-navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .navbar__logomenu {
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    .items {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      .item {
+        font-weight: 500;
+        font-size: 15px;
+        color: #333333;
+      }
+    }
+  }
+  .navbar__btns {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .navbar_lng {
+      padding: 13px 24px;
+      border-radius: 60px;
+      border: 1px solid #333;
+    }
+    .navbar__signup {
+      padding: 13px 24px;
+      background: #6248ff;
+      border-radius: 60px;
+    }
+  }
+}

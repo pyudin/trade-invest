@@ -1,0 +1,52 @@
+.started__content {
+  margin: 140px 0;
+  .started__title {
+    font-weight: 500;
+    font-size: 56px;
+    color: #333333;
+    &.title2 {
+      margin: 0 0 68px 0;
+    }
+    .marked {
+      background-color: #6348ff2a;
+    }
+  }
+  .started__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .start {
+      align-self: flex-start;
+    }
+    .end {
+      align-self: flex-end;
+    }
+    .strted__card {
+      border: 2px solid #6248ff;
+      border-radius: 30px;
+      height: 203px;
+      max-width: 483px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      .card__num {
+        margin: 0 0 8px 0;
+        color: #6248ff;
+        font-weight: 500;
+        font-size: 15px;
+      }
+      .card__title {
+        font-weight: 500;
+        font-size: 24px;
+        color: #333333;
+      }
+      .card__body {
+        font-size: 18px;
+        color: #4f4f4f;
+        line-height: 30px;
+      }
+    }
+  }
+}

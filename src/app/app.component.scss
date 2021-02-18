@@ -1,0 +1,19 @@
+.main-page__header {
+}
+
+.main-page__wrap {
+  width: 100%;
+  .main-page {
+    &__body {
+    }
+
+    &__footer {
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .main-page__wrap {
+    padding: 0 40px;
+  }
+}

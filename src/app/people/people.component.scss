@@ -1,0 +1,51 @@
+.people__content {
+  height: 282px;
+  display: flex;
+  .people__title {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 66px;
+    .marked {
+      background-color: #6348ff2a;
+    }
+  }
+  .people__body {
+    max-width: 50%;
+    .people__author {
+      display: flex;
+      .author__pic {
+        height: 73px;
+        width: 73px;
+        border: 1px solid #333333;
+        margin: 0 30px 17px 0;
+      }
+      .author__body {
+        .author__name {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 30px;
+          color: #333333;
+        }
+        .author__position {
+          font-size: 16px;
+          line-height: 27px;
+          color: #4f4f4f;
+        }
+      }
+    }
+
+    .people__text {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #333333;
+      margin: 0 0 31px 0;
+    }
+    .people__date {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      color: #6248ff;
+    }
+  }
+}
