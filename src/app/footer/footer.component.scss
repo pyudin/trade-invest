@@ -1,8 +1,9 @@
 .footer {
   margin: 32px 0 72px 0;
-  .footer__body {
-    display: grid;
-    grid-template-columns: 8% 39% 39% 14%;
+  .footer__content {
+    // display: grid;
+    // grid-template-columns: 8% 39% 39% 14%;
+    display: flex;
     margin: 0 0 48px 0;
     .footer__logo {
       font-size: 15px;
@@ -19,19 +20,25 @@
         margin: 0 0 16px 0;
       }
       .footer__text {
+        font-family: Montserrat;
         font-size: 16px;
         line-height: 27px;
         color: #4f4f4f;
       }
     }
     .footer__links {
+      margin: 0 0 0 30px;
       font-weight: 500;
       font-size: 15px;
       line-height: 16px;
       color: #333333;
-      display: grid;
-      grid-template-rows: 13% 13% 13% 13% 13% 13%;
+      // display: grid;
+      // grid-template-rows: 13% 13% 13% 13% 13% 13%;
       .footer__link {
+        margin: 0 0 24px 0;
+        .link {
+          cursor: pointer;
+        }
       }
     }
   }
@@ -39,5 +46,67 @@
   .footer__footer {
     display: flex;
     justify-content: space-between;
+
+    .footer__terms {
+      font-family: Montserrat;
+      font-size: 16px;
+      line-height: 27px;
+      color: #828282;
+      font-weight: normal;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    .footer__logo {
+      align-self: center;
+      margin: 62px 0 54px 0;
+      order: 1;
+    }
+    .footer__column {
+      order: 3;
+      margin: 0 0 32px 0;
+      .footer__title {
+        text-align: center;
+      }
+    }
+    .footer__links {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0 40px 0 !important;
+      order: 2;
+      .footer__link {
+      }
+    }
+  }
+  .footer__footer {
+    flex-direction: column;
+    align-items: center;
+    .footer__terms {
+      margin: 0 0 16px 0;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .footer__content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    .footer__logo {
+      margin: auto;
+      order: 1;
+    }
+    .footer__column {
+      order: 3;
+    }
+    .footer__links {
+      order: 2;
+      .footer__link {
+        margin: 0 0 32px 0 !important;
+      }
+    }
   }
 }
