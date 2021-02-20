@@ -1,5 +1,3 @@
-// .questions {
-// margin: 140px 0;
 .questions__content {
   margin: 140px 0;
   .questions__title {
@@ -52,7 +50,25 @@
 }
 
 @media (max-width: 320px) {
-  // .people__content {
-  //   grid-template-rows: auto;
-  // }
+  .questions__content {
+    margin: 80px 0;
+    .questions__title {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 44px;
+      margin: 0 0 40px 0;
+    }
+    .questions__body {
+      .question {
+        padding: 24px 16px;
+        .question__main {
+          .question__title {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
 }

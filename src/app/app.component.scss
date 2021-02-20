@@ -19,10 +19,16 @@
   .container {
     padding: 0 40px;
   }
+  .footer {
+    margin: 62px 0 48px 0;
+  }
 }
 
 @media (max-width: 320px) {
   .container {
     padding: 0 20px;
+  }
+  .footer {
+    margin: 32px 0;
   }
 }
