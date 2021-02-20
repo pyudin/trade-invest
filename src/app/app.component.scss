@@ -1,19 +1,28 @@
-.main-page__header {
+.main {
+  background: #6348ff2a;
 }
 
-.main-page__wrap {
-  width: 100%;
-  .main-page {
-    &__body {
-    }
+.contact {
+  background: #6348ff2a;
+}
 
-    &__footer {
-    }
+.footer {
+  margin: 32px 0 72px 0;
+}
+
+.container {
+  padding: 0 120px;
+  max-width: 1440px;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 40px;
   }
 }
 
-@media (max-width: 599px) {
-  .main-page__wrap {
-    padding: 0 40px;
+@media (max-width: 320px) {
+  .container {
+    padding: 0 20px;
   }
 }
