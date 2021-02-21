@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 interface Question {
   id: number;
   title: string;
-  description?: string;
+  description: string;
 }
 
 @Component({
@@ -27,13 +27,8 @@ export class QuestionsComponent implements OnInit {
     },
     {
       id: 2,
-      title: 'How do I change my details?',
-      description: `We provide only the best trading software. The trading terminal
-        MetaTrader4 is the most popular and convenient platform for access to
-        global exchanges. You can work anywhere. All you need is the Internet
-        because the necessary trading tools are already collected in one place
-        and are available in a couple of clicks. Use only the best and develop
-        with us!`,
+      title: 'What platforms will I be able to use?',
+      description: `We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere. All you need is the Internet because the necessary trading tools are already collected in one place and are available in a couple of clicks. Use only the best and develop with us!`,
     },
     {
       id: 3,
@@ -52,7 +47,19 @@ export class QuestionsComponent implements OnInit {
     },
     {
       id: 5,
-      title: 'How do I change my?',
+      title: 'How do I change my details?',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vero voluptas illum quas perferendis ab? Qui perspiciatis unde blanditiis ipsum.',
+    },
+    {
+      id: 6,
+      title: 'How do I change my details?',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vero voluptas illum quas perferendis ab? Qui perspiciatis unde blanditiis ipsum.',
+    },
+    {
+      id: 7,
+      title: 'How do I change my details?',
       description:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vero voluptas illum quas perferendis ab? Qui perspiciatis unde blanditiis ipsum.',
     },

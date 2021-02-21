@@ -115,11 +115,7 @@
       .contact__textblock {
         grid-template-rows: auto;
         gap: 16px;
-        &:last-child {
-          // gap: 0;
-        }
-        .textblock__header {
-        }
+
         .textblock__text {
           &.first {
             margin: 0 0 24px 0;
@@ -128,4 +124,12 @@
       }
     }
   }
+}
+
+textarea {
+  resize: none;
+}
+
+.invalid {
+  border: 1px solid salmon;
 }
