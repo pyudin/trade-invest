@@ -21,10 +21,12 @@
     .end {
       align-self: flex-end;
     }
-    .strted__card {
+    .started__card {
       border: 2px solid #6248ff;
       border-radius: 30px;
-      max-width: 483px;
+      // max-width: 483px;
+      max-width: 41%;
+
       padding: 32px;
       display: flex;
       flex-direction: column;
@@ -64,9 +66,33 @@
       margin-top: 0px !important;
     }
 
-    max-width: 320px !important;
+    max-width: 47% !important;
   }
 }
 
 @media (max-width: 320px) {
+  .started__content {
+    margin: 80px 0;
+    .started__title {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 44px;
+      &.title2 {
+        margin: 0 0 40px 0;
+      }
+    }
+    .started__cards {
+      .start {
+        align-self: center;
+      }
+      .end {
+        align-self: center;
+      }
+      .started__card {
+        padding: 24px;
+        max-width: 100%;
+        margin-top: 24px;
+      }
+    }
+  }
 }
