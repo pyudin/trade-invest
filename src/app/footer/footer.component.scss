@@ -9,12 +9,72 @@
     line-height: 16px;
     color: #000000;
   }
+<<<<<<< HEAD
   .footer_columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
+=======
+  .footer__column {
+    padding: 0 35px;
+    .footer__title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      color: #333333;
+      margin: 0 0 16px 0;
+    }
+    .footer__text {
+      font-family: Montserrat;
+      font-size: 16px;
+      line-height: 27px;
+      color: #4f4f4f;
+    }
+  }
+  .footer__links {
+    margin: 0 0 0 30px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    color: #333333;
+    // display: grid;
+    // grid-template-rows: 13% 13% 13% 13% 13% 13%;
+    .footer__link {
+      margin: 0 0 24px 0;
+      .link {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.footer__footer {
+  display: flex;
+  justify-content: space-between;
+
+  .footer__terms {
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 27px;
+    color: #828282;
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    .footer__logo {
+      align-self: center;
+      margin: 62px 0 54px 0;
+      order: 1;
+    }
+>>>>>>> 179a14e407da4081835a0e5d5f125ec82490696d
     .footer__column {
-      padding: 0 35px;
+      order: 3;
+      margin: 0 0 32px 0;
       .footer__title {
+<<<<<<< HEAD
         font-weight: 500;
         font-size: 18px;
         line-height: 30px;
@@ -122,6 +182,52 @@
       }
     }
   }
+=======
+        text-align: center;
+      }
+    }
+    .footer__links {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0 40px 0 !important;
+      order: 2;
+    }
+  }
+  .footer__footer {
+    flex-direction: column;
+    align-items: center;
+    .footer__terms {
+      margin: 0 0 16px 0;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .footer__content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 0 24px 0;
+    .footer__logo {
+      margin: auto;
+      margin: 0 0 46px 0;
+      order: 1;
+    }
+    .footer__column {
+      order: 3;
+      padding: 0;
+    }
+    .footer__links {
+      order: 2;
+      flex-direction: column;
+      .footer__link {
+        margin: 0 0 32px 0;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+>>>>>>> 179a14e407da4081835a0e5d5f125ec82490696d
   .footer__terms {
     text-align: center;
   }

@@ -90,6 +90,11 @@
 @media (max-width: 768px) {
   .people__content {
     grid-template-columns: auto;
+<<<<<<< HEAD
+=======
+    .people__title {
+    }
+>>>>>>> 179a14e407da4081835a0e5d5f125ec82490696d
 
     .people__body {
       margin-top: 20px;
@@ -113,7 +118,10 @@
       }
       .people__textquotes {
         display: flex;
+<<<<<<< HEAD
         gap: 42px;
+=======
+>>>>>>> 179a14e407da4081835a0e5d5f125ec82490696d
       }
     }
     .fullscreen-arrows {
