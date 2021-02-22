@@ -12,6 +12,9 @@
   box-sizing: border-box;
 }
 
-.custom-btn-primary {
-  color: red !important;
+.btn-primary {
+  cursor: pointer;
+}
+.btn-primary:hover {
+  opacity: 0.85;
 }

@@ -90,8 +90,6 @@
 @media (max-width: 768px) {
   .people__content {
     grid-template-columns: auto;
-    .people__title {
-    }
 
     .people__body {
       margin-top: 20px;
@@ -115,6 +113,7 @@
       }
       .people__textquotes {
         display: flex;
+        gap: 42px;
       }
     }
     .fullscreen-arrows {

@@ -73,13 +73,13 @@
       }
     }
     .navbar__btns {
+      .navbar_lng {
+        display: none;
+      }
     }
     .navbar__menu {
       display: block;
     }
-  }
-  .navbar_lng {
-    display: none;
   }
 }
 
