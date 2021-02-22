@@ -24,13 +24,16 @@
     .strted__card {
       border: 2px solid #6248ff;
       border-radius: 30px;
-      height: 203px;
       max-width: 483px;
       padding: 32px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
+      margin-top: -50px;
+      &:first-child {
+        margin-top: 0px;
+      }
       .card__num {
         margin: 0 0 8px 0;
         color: #6248ff;
@@ -38,6 +41,8 @@
         font-size: 15px;
       }
       .card__title {
+        margin: 0 0 24px 0;
+
         font-weight: 500;
         font-size: 24px;
         color: #333333;
@@ -50,4 +55,18 @@
       }
     }
   }
+}
+
+@media (max-width: 768px) {
+  .strted__card {
+    margin-top: -80px !important;
+    &:first-child {
+      margin-top: 0px !important;
+    }
+
+    max-width: 320px !important;
+  }
+}
+
+@media (max-width: 320px) {
 }

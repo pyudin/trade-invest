@@ -1,7 +1,6 @@
 .people__content {
-  height: 282px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   .people__title {
     font-weight: 600;
     font-size: 56px;
@@ -11,13 +10,11 @@
     }
   }
   .people__body {
-    max-width: 50%;
     .people__author {
       display: flex;
       .author__pic {
         height: 73px;
         width: 73px;
-        border: 1px solid #333333;
         margin: 0 30px 17px 0;
       }
       .author__body {
@@ -37,11 +34,17 @@
     }
 
     .people__text {
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 29px;
-      color: #333333;
-      margin: 0 0 31px 0;
+      margin: 0 0 31px -50px;
+      display: flex;
+      .text__quotes {
+        margin: 0 15px 0 0;
+      }
+      .text__body {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #333333;
+      }
     }
     .people__date {
       font-weight: 500;
@@ -49,5 +52,64 @@
       line-height: 18px;
       color: #6248ff;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .people__content {
+    grid-template-columns: auto;
+
+    .people__body {
+      margin-top: 20px;
+      text-align: center;
+      .people__author {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 16px 0;
+
+        .author__pic {
+          margin: 0 0 10px 0;
+        }
+      }
+      .people__text {
+        margin: 0 0 31px 0px;
+        display: block;
+        .text__quotes {
+          margin: 0 0px 16px 0;
+        }
+      }
+    }
+    .active-arrows {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  // .people__content {
+  //   grid-template-rows: auto;
+  // }
+}
+
+.active-arrows {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .arrow {
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+  }
+
+  .hide {
+    display: none;
   }
 }

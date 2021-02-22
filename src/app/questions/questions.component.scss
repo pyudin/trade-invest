@@ -1,40 +1,58 @@
-.questions {
+// .questions {
+// margin: 140px 0;
+.questions__content {
   margin: 140px 0;
-  .questions__content {
-    .questions__title {
-      font-weight: 500;
-      font-size: 56px;
-      line-height: 66px;
-      margin: 0 0 68px 0;
-      .marked {
-        background-color: #6348ff2a;
-      }
+  .questions__title {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 66px;
+    margin: 0 0 68px 0;
+    .marked {
+      background-color: #6348ff2a;
     }
-    .questions__body {
-      .question {
-        margin: 0 0 16px 0;
-        border: 2px solid #6248ff;
-        border-radius: 20px;
-        padding: 32px 40px;
-        .question__main {
-          .question__title {
-            &.active {
-              margin: 0 0 24px 0;
-            }
-            font-weight: 500;
-            font-size: 24px;
-          }
-          .question__sign {
+  }
+  .questions__body {
+    .question {
+      cursor: pointer;
+      margin: 0 0 16px 0;
+      border: 2px solid #6248ff;
+      border-radius: 20px;
+      padding: 32px 40px;
+      .question__main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .question__title {
+          font-weight: 500;
+          font-size: 24px;
+        }
+        .question__sign {
+          &.closed {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
           }
         }
-        .question__text {
-          width: 80%;
-          font-family: Montserrat;
-          font-size: 16px;
-          line-height: 27px;
-          color: #4f4f4f;
-        }
+      }
+      .question__text {
+        margin: 24px 0 0 0;
+        width: 90%;
+        font-family: Montserrat;
+        font-size: 16px;
+        line-height: 27px;
+        color: #4f4f4f;
       }
     }
   }
+}
+// }
+@media (max-width: 768px) {
+  .question__text {
+    width: 95%;
+  }
+}
+
+@media (max-width: 320px) {
+  // .people__content {
+  //   grid-template-rows: auto;
+  // }
 }
