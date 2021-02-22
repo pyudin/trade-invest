@@ -60,13 +60,17 @@
 }
 
 @media (max-width: 768px) {
-  .strted__card {
-    margin-top: -80px !important;
-    &:first-child {
-      margin-top: 0px !important;
-    }
+  .started__content {
+    .started__cards {
+      .started__card {
+        margin-top: -80px;
+        &:first-child {
+          margin-top: 0px;
+        }
 
-    max-width: 47% !important;
+        max-width: 47%;
+      }
+    }
   }
 }
 
