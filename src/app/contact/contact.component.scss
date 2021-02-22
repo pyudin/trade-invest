@@ -1,49 +1,112 @@
 .contact {
   background: #6348ff2a;
+  // padding: 120px 0;
 }
 
 .contact__content {
   display: flex;
-  padding: 120px 0;
 
   .contact__body {
-    padding: 0 130px 0 0;
-    margin: 0 -70px 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    padding: 0 20px 0 0;
+    margin: 120px 0px;
     .contact__title {
       font-weight: 500;
       font-size: 56px;
       line-height: 66px;
       color: #333333;
+      margin: 0 0 32px;
     }
     .contact__text {
+      font-family: Montserrat;
       font-size: 18px;
       line-height: 30px;
       color: #4f4f4f;
+      margin: 0 0 48px;
     }
     .contact__textblock {
-      font-size: 16px;
-      line-height: 27px;
-      color: #4f4f4f;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      display: grid;
+      grid-template-rows: 26% 28% 28% 28%;
       .textblock__header {
         font-weight: 500;
         font-size: 15px;
         line-height: 16px;
         color: #333333;
+        margin: 0 0 8px;
+      }
+      .textblock__text {
+        font-family: Montserrat;
+        font-size: 16px;
+        line-height: 27px;
+        color: #4f4f4f;
+        &.first {
+          margin: 0 0 24px 0;
+        }
       }
     }
   }
 
   .contact__form {
     height: 471px;
-    width: 120%;
+    width: 100%;
     border: 2px solid #6248ff;
     border-radius: 20px;
     background: #ffffff;
+    padding: 80px;
+    margin: 120px 0;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // align-items: center;
+
+    .form__input {
+      border: 1px solid #e0e0e0;
+      border-radius: 3px;
+      font-family: Montserrat;
+      font-size: 16px;
+      line-height: 26px;
+      color: #828282;
+      padding: 7px 16px;
+      width: 100%;
+      margin: 0px;
+    }
+    .form__btn {
+      padding: 20px 64px;
+      background: #6248ff;
+      border-radius: 60px;
+      font-size: 16px;
+      line-height: 14px;
+      letter-spacing: 0.03em;
+      color: #ffffff;
+      max-width: 44px;
+    }
+  }
+}
+// .input {
+//   width: 100%;
+// }
+.form__body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .contact__content {
+    flex-wrap: wrap;
+    .contact__body {
+      margin: 48px 0;
+    }
+    .contact__form {
+      margin: 48px 0;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .contact__content {
+    flex-wrap: wrap;
   }
 }

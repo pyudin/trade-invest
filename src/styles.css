@@ -1,7 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../src/fonts/MuseoSansCyrl_500.woff") format("woff");
+}
 
 * {
-  font-family: "Courier New", Courier, monospace;
+  font-family: MuseoSansCyrl;
 }
 body {
   margin: 0;
