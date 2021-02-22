@@ -12,14 +12,9 @@
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 .btn-primary {
   cursor: pointer;
 }
 .btn-primary:hover {
   opacity: 0.85;
-=======
-.custom-btn-primary {
-  color: red !important;
->>>>>>> 179a14e407da4081835a0e5d5f125ec82490696d
 }
