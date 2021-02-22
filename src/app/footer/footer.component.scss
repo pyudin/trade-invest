@@ -72,8 +72,10 @@
       order: 1;
     }
     .footer_columns {
+      margin: 0;
       order: 3;
       grid-template-columns: auto;
+      gap: 0;
       .footer__column {
         margin: 0 0 32px 0;
         .footer__title {
