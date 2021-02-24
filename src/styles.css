@@ -11,3 +11,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.btn-primary {
+  cursor: pointer;
+}
+.btn-primary:hover {
+  opacity: 0.85;
+}

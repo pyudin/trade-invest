@@ -46,11 +46,17 @@
         color: #333333;
       }
     }
+    .people__datearrow {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     .people__date {
       font-weight: 500;
       font-size: 15px;
       line-height: 18px;
       color: #6248ff;
+      margin: auto;
     }
   }
   .fullscreen-arrows {
@@ -60,6 +66,9 @@
     gap: 10px;
   }
   .pad-arrows {
+    display: none;
+  }
+  .mobile-arrows {
     display: none;
   }
   .arrow {
@@ -81,8 +90,6 @@
 @media (max-width: 768px) {
   .people__content {
     grid-template-columns: auto;
-    .people__title {
-    }
 
     .people__body {
       margin-top: 20px;
@@ -106,6 +113,7 @@
       }
       .people__textquotes {
         display: flex;
+        gap: 42px;
       }
     }
     .fullscreen-arrows {
@@ -119,7 +127,16 @@
 }
 
 @media (max-width: 320px) {
-  // .people__content {
-  //   grid-template-rows: auto;
-  // }
+  .people__content {
+    .people__title {
+      font-size: 40px;
+      line-height: 44px;
+    }
+    .pad-arrows {
+      display: none;
+    }
+    .mobile-arrows {
+      display: block;
+    }
+  }
 }
